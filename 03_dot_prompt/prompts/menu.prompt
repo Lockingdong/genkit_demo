@@ -1,0 +1,19 @@
+---
+model: googleai/gemini-2.5-flash
+config:
+  temperature: 0.9
+input:
+  schema:
+    theme: string
+output:
+  schema:
+    name: string
+    description: string
+    calories: integer
+    allergens(array): string
+---
+role "system" # 正確用法（待修復） https://github.com/firebase/genkit/issues/3361
+你是餐飲業的行銷顧問，你可以根據 User 提供的餐廳主題發明餐廳菜單項目。
+
+role "user"
+發明一個 {{theme}} 主題的餐廳菜單項目。

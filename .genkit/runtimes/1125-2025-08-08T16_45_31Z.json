@@ -1,0 +1,8 @@
+{
+  "id": "1125",
+  "pid": 1125,
+  "reflectionServerUrl": "http://127.0.0.1:3100",
+  "timestamp": "2025-08-08T16_45_31Z",
+  "genkitVersion": "go/0.5.4",
+  "reflectionApiSpecVersion": 1
+}

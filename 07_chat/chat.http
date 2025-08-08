@@ -1,0 +1,16 @@
+### 開始新的對話
+POST http://localhost:8080/chat
+Content-Type: application/json
+
+{
+  "message": "你好，我是東東"
+}
+
+### 繼續對話 (使用相同 session_id)
+POST http://localhost:8080/chat
+Content-Type: application/json
+
+{
+  "session_id": "session_1754670986672812000",
+  "message": "我剛才告訴你我的名字了嗎？"
+}

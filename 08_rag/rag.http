@@ -1,0 +1,39 @@
+### 測試問答 API - 台灣美食
+POST http://localhost:8080/ask
+Content-Type: application/json
+
+{
+    "question": "台灣有什麼著名的美食？"
+}
+
+### 測試問答 API - 台灣旅遊
+POST http://localhost:8080/ask
+Content-Type: application/json
+
+{
+    "question": "台灣有哪些著名的旅遊景點？"
+}
+
+### 測試問答 API - 台灣科技
+POST http://localhost:8080/ask
+Content-Type: application/json
+
+{
+    "question": "台灣在科技產業方面有什麼優勢？"
+}
+
+### 測試問答 API - 台灣文化
+POST http://localhost:8080/ask
+Content-Type: application/json
+
+{
+    "question": "台灣有哪些傳統文化特色？"
+}
+
+### 測試問答 API - 台灣教育
+POST http://localhost:8080/ask
+Content-Type: application/json
+
+{
+    "question": "台灣的教育制度如何？"
+}
