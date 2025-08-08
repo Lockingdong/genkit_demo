@@ -132,14 +132,14 @@ func main() {
 
 		// 建構上下文
 		context := "根據以下相關資訊回答問題:\n\n"
-		for i, doc := range retrievedDocs.Documents {
+		for _, doc := range retrievedDocs.Documents {
 			title := "未知標題"
 			if titleVal, ok := doc.Metadata["title"]; ok {
 				if titleStr, ok := titleVal.(string); ok {
 					title = titleStr
 				}
 			}
-			context += fmt.Sprintf("文檔 %d - %s:\n%s\n\n", i+1, title, doc.Content[0].Text)
+			context += fmt.Sprintf("文檔 %s:\n%s\n\n", title, doc.Content[0].Text)
 		}
 
 		// 生成回答
