@@ -31,6 +31,7 @@ func main() {
 	g, err := genkit.Init(ctx,
 		genkit.WithPlugins(
 			&googlegenai.GoogleAI{},
+			// https://www.pinecone.io/
 			&pinecone.Pinecone{},
 		),
 		genkit.WithDefaultModel("googleai/gemini-2.5-flash"),
